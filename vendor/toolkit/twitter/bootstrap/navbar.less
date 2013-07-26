@@ -22,10 +22,10 @@
   min-height: @navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  background-color: @navbarBackground; // #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
   border: 1px solid @navbarBorder;
-  .border-radius(@baseBorderRadius);
-  .box-shadow(0 1px 4px rgba(0,0,0,.065));
+  // .border-radius(@baseBorderRadius);
+  // .box-shadow(0 1px 4px rgba(0,0,0,.065));
 
   // Prevent floats from breaking the navbar
   .clearfix();
@@ -159,7 +159,7 @@
   position: static;
   margin-bottom: 0; // remove 18px margin for default navbar
   .navbar-inner {
-    .border-radius(0);
+    // .border-radius(0);
   }
 }
 
@@ -188,7 +188,7 @@
 .navbar-fixed-bottom .navbar-inner {
   padding-left:  0;
   padding-right: 0;
-  .border-radius(0);
+  // .border-radius(0);
 }
 
 // Reset container width
@@ -203,20 +203,20 @@
 .navbar-fixed-top {
   top: 0;
 }
-.navbar-fixed-top,
-.navbar-static-top {
-  .navbar-inner {
-    .box-shadow(~"0 1px 10px rgba(0,0,0,.1)");
-  }
-}
+// .navbar-fixed-top,
+// .navbar-static-top {
+//   .navbar-inner {
+//     .box-shadow(~"0 1px 10px rgba(0,0,0,.1)");
+//   }
+// }
 
 // Fixed to bottom
-.navbar-fixed-bottom {
-  bottom: 0;
-  .navbar-inner {
-    .box-shadow(~"0 -1px 10px rgba(0,0,0,.1)");
-  }
-}
+// .navbar-fixed-bottom {
+//   bottom: 0;
+//   .navbar-inner {
+//     .box-shadow(~"0 -1px 10px rgba(0,0,0,.1)");
+//   }
+// }
 
 
 
@@ -392,7 +392,7 @@
 .navbar-inverse {
 
   .navbar-inner {
-    #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+    background-color: @navbarInverseBackground; // #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
     border-color: @navbarInverseBorder;
   }
 
